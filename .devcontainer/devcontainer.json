@@ -1,43 +1,8 @@
 {
-  "name": "Year 11 Python Project",
-  "image": "mcr.microsoft.com/devcontainers/python:3.11",
-
-  "customizations": {
-    "vscode": {
-      "extensions": [
-        "ms-python.python",
-        "charliermarsh.ruff"
-      ],
-      "settings": {
-        // Hide config/system files from the Explorer sidebar
-        "files.exclude": {
-          "**/.git": true,
-          "**/.devcontainer": true,
-          "**/.vscode": true,
-          "**/.gitignore": true,
-          "**/README.md": true,
-          "**/requirements.txt": true
-        },
-
-        // Clean, CS50.dev-like interface
-        "workbench.activityBar.visible": false,
-        "workbench.statusBar.visible": false,
-        "editor.minimap.enabled": false,
-        "workbench.editor.enablePreview": false,
-        "explorer.openEditors.visible": 0,
-        "workbench.panel.defaultLocation": "bottom",
-
-        // Python interpreter
-        "python.defaultInterpreterPath": "/usr/local/bin/python",
-
-        // Terminal
-        "terminal.integrated.defaultProfile.linux": "bash",
-        "terminal.integrated.fontSize": 14,
-        "editor.fontSize": 14
-      }
+    "workspaceFolder": "/workspace",
+    "dockerFile": "Dockerfile",
+    "settings": {
+        "workbench.activityBar.visible": true,
+        "workbench.statusBar.visible": true
     }
-  },
-
-  // Set a clean, simple shell prompt and copy machine-scope settings
-  "postCreateCommand": "chmod +x .devcontainer/setup.sh && .devcontainer/setup.sh"
 }
